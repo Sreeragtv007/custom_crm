@@ -268,5 +268,15 @@ fixtures = [
         "filters": [
             ["dt", "in", ["Lead", "CRM Lead"]]
         ]
+    },
+    {
+        "dt": "CRM Form Script",
+        "filters": [
+            ["name", "in", ["CRM Lead Priority Color"]]
+        ]
     }
+]
+
+website_route_rules = [
+	{"from_route": "/crm/<path:app_path>", "to_route": "crm"},
 ]
