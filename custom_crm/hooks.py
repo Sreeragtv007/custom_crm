@@ -263,5 +263,10 @@ app_license = "mit"
 # ignore_translatable_strings_from = []
 
 fixtures = [
-    "Custom Field"
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Lead", "CRM Lead"]]
+        ]
+    }
 ]
