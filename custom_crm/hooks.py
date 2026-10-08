@@ -272,7 +272,7 @@ fixtures = [
     {
         "dt": "CRM Form Script",
         "filters": [
-            ["name", "in", ["CRM Lead Priority Color", "CRM Lead Priority List Color"]]
+            ["name", "in", ["CRM Lead Priority Color"]]
         ]
     }
 ]

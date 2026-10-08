@@ -9,16 +9,5 @@
   "name": "CRM Lead Priority Color",
   "script": "class CRMLead {\n  updatePriorityColor() {\n    const priority = this.doc.custom_priority;\n    let colorClass = \"\";\n    if (priority === \"High\") {\n      colorClass = \"text-red-500\";\n    } else if (priority === \"Medium\") {\n      colorClass = \"text-yellow-500\";\n    } else if (priority === \"Low\") {\n      colorClass = \"text-green-500\";\n    }\n    this.setFieldProperty(\"custom_priority\", \"prefix\", colorClass);\n  }\n\n  onLoad() {\n    this.updatePriorityColor();\n  }\n\n  onRender() {\n    this.updatePriorityColor();\n  }\n\n  custom_priority() {\n    this.updatePriorityColor();\n  }\n}\n",
   "view": "Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "CRM Form Script",
-  "dt": "CRM Lead",
-  "enabled": 1,
-  "is_standard": 0,
-  "modified": "2026-10-06 10:09:12.697979",
-  "name": "CRM Lead Priority List Color",
-  "script": "class CRMLead {\n  updatePriorityColor() {\n    const priority = this.doc.custom_priority;\n    let colorClass = \"\";\n    if (priority === \"High\") {\n      colorClass = \"text-red-500\";\n    } else if (priority === \"Medium\") {\n      colorClass = \"text-yellow-500\";\n    } else if (priority === \"Low\") {\n      colorClass = \"text-green-500\";\n    }\n    this.setFieldProperty(\"custom_priority\", \"prefix\", colorClass);\n  }\n\n  onLoad() {\n    this.updatePriorityColor();\n  }\n\n  onRender() {\n    this.updatePriorityColor();\n  }\n\n  custom_priority() {\n    this.updatePriorityColor();\n  }\n}\n",
-  "view": "List"
  }
 ]

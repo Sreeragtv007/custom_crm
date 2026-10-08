@@ -1,0 +1,53 @@
+/**
+ * CRM List View Priority Badge Styles
+ * Applies clean badge pill styling to priority cells without destroying Vue Virtual DOM.
+ */
+[data-priority] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 2px 8px !important;
+  border-radius: 9999px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+  width: fit-content !important;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+[data-priority]::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* High Priority (Red) */
+[data-priority="High"] {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  color: #ef4444 !important;
+}
+[data-priority="High"]::before {
+  background-color: #ef4444;
+}
+
+/* Medium Priority (Amber) */
+[data-priority="Medium"] {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  color: #f59e0b !important;
+}
+[data-priority="Medium"]::before {
+  background-color: #f59e0b;
+}
+
+/* Low Priority (Green) */
+[data-priority="Low"] {
+  background-color: rgba(34, 197, 94, 0.15) !important;
+  color: #22c55e !important;
+}
+[data-priority="Low"]::before {
+  background-color: #22c55e;
+}
