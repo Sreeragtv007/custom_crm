@@ -274,6 +274,12 @@ fixtures = [
         "filters": [
             ["name", "in", ["CRM Lead Priority Color"]]
         ]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [
+            ["parent", "in", ["Lead", "CRM Lead"]]
+        ]
     }
 ]
 
